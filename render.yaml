@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: hiyarihatto
+    name: hiyarihatto2
     env: python
-    buildCommand: ""
-    startCommand: "gunicorn hiyarihatto.wsgi"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn hiyarihatto2.wsgi"
     envVars:
       - key: SECRET_KEY
         value: YOUR_SECRET_KEY
