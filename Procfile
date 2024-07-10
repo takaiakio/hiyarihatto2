@@ -1,1 +1,2 @@
-web: gunicorn hiyarihatto2.wsgi
+web: gunicorn hiyarihatto2.wsgi --log-file -
+
