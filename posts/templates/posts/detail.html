@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ヒヤリハット詳細</title>
+</head>
+<body>
+    <h1>ヒヤリハット詳細</h1>
+    <p><strong>題名:</strong> {{ post.title }}</p>
+    <p><strong>工程:</strong> {{ post.process }}</p>
+    <p><strong>やるべきこと:</strong> {{ post.action }}</p>
+    <p><strong>ヒヤリとした場面:</strong> {{ post.situation }}</p>
+    <p><strong>気づけなければ、どうなるのか:</strong> {{ post.consequence }}</p>
+    <p><strong>回避事由:</strong> {{ post.avoidance }}</p>
+    <p><strong>危険度:</strong> {{ post.danger_level }}</p>
+    <p><strong>様態評価:</strong> {{ post.get_phase_display }}</p>
+    <p><strong>作成日時:</strong> {{ post.created_at }}</p>
+    <br>
+    <a href="{% url 'list_posts' %}">一覧に戻る</a>
+</body>
+</html>
+

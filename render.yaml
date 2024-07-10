@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: hiyarihatto
+    env: python
+    buildCommand: ""
+    startCommand: "gunicorn hiyarihatto.wsgi"
+    envVars:
+      - key: SECRET_KEY
+        value: YOUR_SECRET_KEY
+      - key: DATABASE_URL
+        value: YOUR_DATABASE_URL

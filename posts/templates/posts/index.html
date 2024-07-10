@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ヒヤリハット情報投稿</title>
+</head>
+<body>
+    <h1>ヒヤリハット情報を以下に入力してください。</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">送信</button>
+    </form>
+    <br>
+    <a href="{% url 'export_to_csv' %}">CSVファイルにダウンロード</a>
+    <br>
+    <a href="{% url 'list_posts' %}">ストックされたデータの一覧</a>
+</body>
+</html>
