@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+# hiyarihatto/settings.py
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -76,8 +78,7 @@ WSGI_APPLICATION = 'hiyarihatto2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# hiyarihatto/settings.py
-import dj_database_url
+
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
@@ -92,10 +93,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
     }
 }'''
 
-import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3'))
 }
 
 
