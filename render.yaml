@@ -6,6 +6,6 @@ services:
     startCommand: "gunicorn hiyarihatto2.wsgi"
     envVars:
       - key: SECRET_KEY
-        value: YOUR_SECRET_KEY
+        value: 9k%6+%h3z1230cm-l)3!6r$%^0
       - key: DATABASE_URL
-        value: YOUR_DATABASE_URL
+        value: postgresql://hatto:5e0opTMIKCLXQmsxi3vKwNQ4atRq2wmB@dpg-cq2e2u3v2p9s73eqv5g0-a:5452/hiyari
