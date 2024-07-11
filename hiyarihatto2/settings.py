@@ -85,10 +85,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hiyari',
+        'NAME': 'hiyari_tmly',
         'USER': 'hatto',
-        'PASSWORD': '5e0opTMIKCLXQmsxi3vKwNQ4atRq2wmB',
-        'HOST': 'dpg-cq2e2u3v2p9s73eqv5g0-a',
+        'PASSWORD': '7SOOZsLDkch9C5GCMaCsZAIX2j5vX2za',
+        'HOST': 'dpg-cq7li8uehbks7391c42g-a',
         'PORT': '5432',
     }
 }'''
