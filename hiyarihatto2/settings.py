@@ -94,6 +94,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 }'''
 
 
+from dotenv import load_dotenv
+
+load_dotenv()  # .envファイルから環境変数を読み込む
+
 DATABASES = {
     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }

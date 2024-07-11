@@ -2,10 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from dotenv import load_dotenv
 
+# .envファイルの読み込み
+load_dotenv()
 
-def main():
-    """Run administrative tasks."""
+if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hiyarihatto2.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -17,6 +19,3 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
-if __name__ == '__main__':
-    main()
