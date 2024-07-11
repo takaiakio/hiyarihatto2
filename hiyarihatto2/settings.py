@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'hiyarihatto2.wsgi.application'
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'hiyari',
@@ -91,12 +91,12 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
         'HOST': 'dpg-cq2e2u3v2p9s73eqv5g0-a',
         'PORT': '5432',
     }
-}'''
-
-
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3'))
 }
+
+
+'''DATABASES = {
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'sqlite:///db.sqlite3'))
+}'''
 
 
 
